@@ -1,0 +1,36 @@
+title = "Meu Blog"
+theme  = "papermod"
+defaultContentLanguage = "pt"
+
+[params]
+  author      = "Miguel Bonilha"
+  description = "Pensamentos, projetos e descobertas."
+
+  # Layout dos cards na home
+  layoutBackgroundDark = true          # ← fundo escuro nos cards
+  ShowPostNavLinks      = true
+  ShowReadingTime       = true
+  ShowShareButtons      = false
+  ShowCodeCopyButtons   = true
+  ShowBreadCrumbs       = true
+  ShowToc               = true
+
+  defaultTheme       = "auto"
+  disableThemeToggle = false
+
+  [params.homeInfoParams]
+    Title   = "Olá! Este é meu Blog 👋"
+    Content = "desenvolvi utilizando Hugo, e acho que vou compartilhar aqui algumas coisas que julgar interessantes."
+
+  [params.assets]
+    disableFingerprinting = false
+
+[[menu.main]]
+  identifier = "sobre"
+  name       = "Sobre Mim"
+  url        = "https://mglbonil.github.io/portifolio/"
+  weight     = 10
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
