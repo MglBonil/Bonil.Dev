@@ -6,6 +6,12 @@ defaultContentLanguage = "pt"
   author      = "Miguel Bonilha"
   description = "Pensamentos, projetos e descobertas."
 
+  customCSS = ["css/extended/custom.css"]
+
+  mainSections = ["posts", "projetos"]  # coloca todas as pastas que quer incluir
+
+  fuseOpts = { isCaseSensitive = false, shouldSort = true, location = 0, distance = 1000, threshold = 0.4, minMatchCharLength = 0 }
+
   # Layout dos cards na home
   layoutBackgroundDark = true          # ← fundo escuro nos cards
   ShowPostNavLinks      = true
@@ -26,11 +32,52 @@ defaultContentLanguage = "pt"
     disableFingerprinting = false
 
 [[menu.main]]
-  identifier = "sobre"
-  name       = "Sobre Mim"
-  url        = "https://mglbonil.github.io/portifolio/"
+  identifier = "inicio"
+  name       = "Início"
+  url        = "/"
+  weight     = 1
+
+[[menu.main]]
+  identifier = "projetos"
+  name       = "Projetos"
+  url        = "/projetos/"
   weight     = 10
+
+[[menu.main]]
+  identifier = "archives"
+  name = "Timeline"
+  url = "/archives/"
+  weight = 20
+
+[[menu.main]]
+  identifier = "search"
+  name = "Buscar"
+  url = "/search/"
+  weight = 30
+
+[[menu.main]]
+  identifier = "tags"
+  name       = "Tags"
+  url        = "/tags/"
+  weight     = 35
+
+[[menu.main]]
+  identifier = "sobre"
+  name       = "Autor"
+  url        = "https://mglbonil.github.io/portifolio/"
+  weight     = 40
+
+[pagination]
+  pagerSize = 5
+
+
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
 
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+
+  

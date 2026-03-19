@@ -6,13 +6,13 @@
     <description>Recent content in Posts on Meu Blog</description>
     <generator>Hugo</generator>
     <language>pt</language>
-    <lastBuildDate>Thu, 19 Mar 2026 10:48:39 -0300</lastBuildDate>
+    <lastBuildDate>Wed, 19 Mar 2025 10:48:39 -0300</lastBuildDate>
     <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Meu primeiro post</title>
-      <link>//localhost:1313/posts/meu-primeiro-post/</link>
-      <pubDate>Thu, 19 Mar 2026 10:48:39 -0300</pubDate>
-      <guid>//localhost:1313/posts/meu-primeiro-post/</guid>
+      <link>//localhost:1313/posts/meu-primeiro-post-copy-2/</link>
+      <pubDate>Wed, 19 Mar 2025 10:48:39 -0300</pubDate>
+      <guid>//localhost:1313/posts/meu-primeiro-post-copy-2/</guid>
       <description>&lt;p&gt;Este é o meu primeiro post no blog em Hugo.&lt;/p&gt;</description>
     </item>
   </channel>
