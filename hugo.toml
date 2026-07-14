@@ -1,3 +1,4 @@
+baseURL = "https://mglbonil.github.io/Bonil.Dev/"
 title = "Bonil.Dev"
 theme = "hextra"
 defaultContentLanguage = "pt"
