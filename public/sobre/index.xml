@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Bonil.Dev – Tags</title>
-    <link>/tags/</link>
-    <description>Recent content in Tags on Bonil.Dev</description>
+    <title>Bonil.Dev – Sobre</title>
+    <link>/sobre/</link>
+    <description>Recent content in Sobre on Bonil.Dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt</language>
     
-	  <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/sobre/index.xml" rel="self" type="application/rss+xml" />
     
     
       

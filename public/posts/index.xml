@@ -1,19 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Meu Blog</title>
-    <link>//localhost:1313/posts/</link>
-    <description>Recent content in Posts on Meu Blog</description>
-    <generator>Hugo</generator>
+    <title>Bonil.Dev – Posts</title>
+    <link>/posts/</link>
+    <description>Recent content in Posts on Bonil.Dev</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>pt</language>
     <lastBuildDate>Wed, 19 Mar 2025 10:48:39 -0300</lastBuildDate>
-    <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+	  <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
     <item>
-      <title>Meu primeiro post</title>
-      <link>//localhost:1313/posts/meu-primeiro-post-copy-2/</link>
+      <title>Meu primeiro post (Remaster)</title>
+      <link>/posts/post/</link>
       <pubDate>Wed, 19 Mar 2025 10:48:39 -0300</pubDate>
-      <guid>//localhost:1313/posts/meu-primeiro-post-copy-2/</guid>
-      <description>&lt;p&gt;Este é o meu primeiro post no blog em Hugo.&lt;/p&gt;</description>
+      
+      <guid>/posts/post/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Talvez aqui seja o começo de algo&amp;hellip; Já havia prometido isso antes (não que alguem tenha lido ou se importe), porém, agora vejo uma luz mais clara no fim do tunel. Caso eu passe no vestibular ainda esse ano (assim eu espero), pretendo começar a alimentar de fato esse blog. Enfim é isso e até a próxima 👋. (inclusive percebi que eu nem se quer criei uma página de sobre (que vergonha hahahaha))&lt;/p&gt;
+
+      </description>
     </item>
+    
   </channel>
 </rss>

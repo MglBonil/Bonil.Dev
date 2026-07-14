@@ -1,83 +1,107 @@
-title = "Meu Blog"
-theme  = "papermod"
+title = "Bonil.Dev"
+theme = "hextra"
 defaultContentLanguage = "pt"
 
-[params]
-  author      = "Miguel Bonilha"
-  description = "Pensamentos, projetos e descobertas."
-
-  customCSS = ["css/extended/custom.css"]
-
-  mainSections = ["posts", "projetos"]  # coloca todas as pastas que quer incluir
-
-  fuseOpts = { isCaseSensitive = false, shouldSort = true, location = 0, distance = 1000, threshold = 0.4, minMatchCharLength = 0 }
-
-  # Layout dos cards na home
-  layoutBackgroundDark = true          # ← fundo escuro nos cards
-  ShowPostNavLinks      = true
-  ShowReadingTime       = true
-  ShowShareButtons      = false
-  ShowCodeCopyButtons   = true
-  ShowBreadCrumbs       = true
-  ShowToc               = true
-
-  defaultTheme       = "auto"
-  disableThemeToggle = false
-
-  [params.homeInfoParams]
-    Title   = "Olá! Este é meu Blog 👋"
-    Content = "desenvolvi utilizando Hugo, e acho que vou compartilhar aqui algumas coisas que julgar interessantes."
-
-  [params.assets]
-    disableFingerprinting = false
-
-[[menu.main]]
-  identifier = "inicio"
-  name       = "Início"
-  url        = "/"
-  weight     = 1
-
-[[menu.main]]
-  identifier = "projetos"
-  name       = "Projetos"
-  url        = "/projetos/"
-  weight     = 10
-
-[[menu.main]]
-  identifier = "archives"
-  name = "Timeline"
-  url = "/archives/"
-  weight = 20
-
-[[menu.main]]
-  identifier = "search"
-  name = "Buscar"
-  url = "/search/"
-  weight = 30
-
-[[menu.main]]
-  identifier = "tags"
-  name       = "Tags"
-  url        = "/tags/"
-  weight     = 35
-
-[[menu.main]]
-  identifier = "sobre"
-  name       = "Autor"
-  url        = "https://mglbonil.github.io/portifolio/"
-  weight     = 40
-
-[pagination]
-  pagerSize = 5
-
-
+enableRobotsTXT = true
+enableGitInfo = false
+hasCJKLanguage = false
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["html"]
+  page = ["html"]
+  section = ["html", "rss"]
 
-[caches]
-  [caches.images]
-    dir = ':cacheDir/images'
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[menu]
+
+  [[menu.main]]
+    identifier = "Sobre"
+    name = "Sobre"
+    pageRef = "/sobre"
+    weight = 2
 
 
-  
+  [[menu.main]]
+    identifier = "sobre"
+    name = "Autor"
+    url = "https://mglbonil.github.io/portifolio/"
+    weight = 3
+    [menu.main.params]
+      icon = "github"
+
+  [[menu.main]]
+    identifier = "search"
+    name = "Buscar"
+    weight = 5
+    [menu.main.params]
+      type = "search"
+
+  [[menu.main]]
+    name = "Tema"
+    weight = 8
+    [menu.main.params]
+      type = "theme-toggle"
+
+  [[menu.main]]
+    name = "RSS"
+    url = "/index.xml"
+    weight = 9
+    [menu.main.params]
+      icon = "rss"
+
+[params]
+  description = "Pensamentos, projetos e descobertas."
+
+  [params.navbar]
+    displayTitle = true
+    displayLogo = false
+    width = "wide"
+
+  [params.theme]
+    default = "system"
+    displayToggle = true
+
+  [params.footer]
+    enable = true
+    displayCopyright = true
+    displayPoweredBy = true
+    width = "normal"
+
+  [params.search]
+    enable = true
+    type = "flexsearch"
+    [params.search.flexsearch]
+      index = "content"
+      tokenize = "forward"
+
+  [params.blog]
+    [params.blog.list]
+      displayTags = true
+      sortBy = "date"
+      sortOrder = "desc"
+      pagerSize = 10
+
+  [params.toc]
+    displayTags = true
+
+  [params.highlight]
+    [params.highlight.copy]
+      enable = true
+      display = "hover"
+
+  [params.page]
+    width = "normal"
+
+  [params.imageZoom]
+    enable = true
+
+  [params.comments]
+    enable = false
+
+  displayUpdatedDate = true
+  dateFormat = "January 2, 2006"
